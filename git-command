@@ -1,0 +1,66 @@
+Command that are used in Git
+
+touch file1 ==> create a new empty file
+ls ==> list the files in directory
+git status ==> check the place of file whether placed in Workspace or Staging/Index pharse 
+git add file1 ==> by using add <filesname> command move file from WorkingSpace to Staging/Index phase 
+git status ==> to check the placement of file whether in Workspace or Staging/Index
+git commit -m "Label" file1 ==> this command is used to message the changes/Modification done in file and also move the file to workspace to Local Repo
+                               with creating CID to the file
+git status ==> by using this command we able to check the file in Workspace and Staging/Index
+git log ==> to check ready files that there moving from Local Repo to Central Repoistory with CID label
+git show cid ==> this command is to use show the files content in CID 
+
+
+For creating Mulitple files using command in git
+
+touch file2 file3 file4 file5  ==> create multiple new empty file
+git status  ==> check the place of file whether placed in Workspace or Staging/Index pharse 
+git add file2 file4 ==> by using add <filesname> <filesname> command move specific file from WorkingSpace to Staging/Index phase
+(or)
+git add. ==> by using this command total files in workspace can move to staging/index phase
+(or)
+git add * ==> by using this command total files in workspace can move to staging/index phase
+(or)
+git add -A ==> by using this command total files in workspace can move to staging/index phase
+git status ==> check the place of file whether placed in Workspace or Staging/Index pharse 
+git commit -m "Label" ==> this command is used to message the changes/Modification done in file and also move the file to workspace to Local Repo with creating CID to the file
+
+
+
+
+
+git reset --self cid ==> by using this command getting back files that are present in local repo to staging.
+
+
+git reset HEAD file-name ==> by using this command getting back files that are present in staging to workspace.
+
+
+git reset --mixed cid ==> by using this command direct movinf file that present in Local repo as well as file in staging to Workspace
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Download File form Central Repository to Local Machine Commands
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+git clone https://https://github.com/BKTPTY/GitLearningClass.git  ==> by using clone command we can download the file form github to local machine where we can do modification according to project.
+ls ==> list the files in directory
+cd GitLearningClass.git ==>change directory to my file
+Note: After clone from git we need to change directory to our file
+touch bala  ==> create a new empty file
+git status
+git add .
+git commit -m "label" Bala
+git push  ==> we can push the <file>Bala to central repostiory from local machine  
+
+
+
+
+
+
+
+
